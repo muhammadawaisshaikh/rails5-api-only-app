@@ -24,7 +24,7 @@ gem 'puma', '~> 3.11'
 
 gem 'versionist'
 
-gem 'factory_girl'
+gem 'factory_bot'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
