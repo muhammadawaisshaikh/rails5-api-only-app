@@ -13,10 +13,16 @@ class V1::BooksController < ApplicationController
       render json: { errors: book.errors }, status: :unprocessable_entity
     end
   end
+
   private
   
   def book_params
     params.require(:book).permit(:title, :author, :weight, :publisher, :language, :pages, :publication_date)
+  end
+
+  def show
+    book = Book.find(params[:id])
+    render json: book, status: :ok
   end
 
 end
