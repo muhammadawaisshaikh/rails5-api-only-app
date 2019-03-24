@@ -1,24 +1,33 @@
-# README
+# Table of Contents
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1.0 Introducion
 
-Things you may want to cover:
+2.0 Creating and Setting Up
 
-* Ruby version
+2.1 Installind Rspec
 
-* System dependencies
+2.2 Setting API Subdomain
 
-* Configuration
+2.3 Set up /etc/hosts
 
-* Database creation
+2.4 Setting API Versioning
 
-* Database initialization
+3.0 Creating Book Model
 
-* How to run the test suite
+3.1 Index All Books
 
-* Services (job queues, cache servers, search engines, etc.)
+4.0 Active Model Serializer
 
-* Deployment instructions
+4.1 Custom Method on Serializer
 
-* ...
+4.2 Json API Adapter
+
+5.0 Creating the Others Actions
+
+5.1 Action Create
+
+5.2 Action Show
+
+5.3 Action Update
+
+5.4 Action Destroy
