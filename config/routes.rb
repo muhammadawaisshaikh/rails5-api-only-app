@@ -4,4 +4,7 @@ Rails.application.routes.draw do
     
   constraints subdomain: 'api' do
   end
+
+  resources :books
+  
 end
