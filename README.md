@@ -31,3 +31,7 @@
 5.3 Action Update
 
 5.4 Action Destroy
+
+
+# getting all responces from GET request
+http://api.localhost:3000/v1/books
