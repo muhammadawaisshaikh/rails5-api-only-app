@@ -14,12 +14,6 @@ class V1::BooksController < ApplicationController
     end
   end
 
-  private
-  
-  def book_params
-    params.require(:book).permit(:title, :author, :weight, :publisher, :language, :pages, :publication_date)
-  end
-
   def show
     book = Book.find(params[:id])
     render json: book, status: :ok
@@ -38,6 +32,12 @@ class V1::BooksController < ApplicationController
     book = Book.find(params[:id])
     book.destroy
     head 204
+  end
+
+  private
+  
+  def book_params
+    params.require(:book).permit(:title, :author, :weight, :publisher, :language, :pages, :publication_date)
   end
 
 end
